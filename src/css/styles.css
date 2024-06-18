@@ -1,0 +1,96 @@
+body{
+    background-color: gray;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container .faq{
+    background-color: #fcfcfc;
+    border-radius: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 655px;
+    height: 347px;
+    position: relative;
+}
+
+.container .faq .imagem{
+    width: 278px;
+    margin: 40px;
+    left: -130px;
+    position: absolute;
+}
+
+.container .faq .duvidas{
+    width: 390px;
+    margin: 40px 40px 40px auto;
+    
+}
+
+.container .faq .duvidas .duvida{
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 1px solid #000;
+    padding: 5px;
+
+    cursor: pointer;
+    background-image: url(../images/seta.png);
+    background-repeat: no-repeat;
+    background-position: top 8px right 0;
+    background-size: 12px;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.container .faq .duvidas .duvida:last-child{
+    border-bottom: none;
+}
+
+.container .faq .duvidas h2{
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+
+}
+
+.container .faq .duvidas .duvida h3{
+    width: 90%;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    padding-bottom: 15px;
+    transition: 0.2s ease;
+}
+
+.duvida h3:hover{
+    color: #f47c57;
+}
+
+.paragrafo{
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: none;
+    max-width: 340px;
+}
+
+.container .duvidas .duvida.mostrar h2{
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.container .duvidas .duvida.mostrar .paragrafo{
+    display: block;
+}
+
+.container .duvidas .duvida.mostrar{
+    background-image: url(../images/sete-aberta.png);
+}
+
